@@ -92,11 +92,7 @@ MIT License
 
 ## 关于作者
 
-\[Zeturn]
-\[[GitHub主页](https://github.com/zeturn)]
+Zeturn：[GitHub 主页](https://github.com/zeturn)
 
 ---
 
-```
-
----
