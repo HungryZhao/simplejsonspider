@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+*.egg
+*.log
+*.sqlite3
+*.db
+*.env
+.env*
+
+# VS Code
+.vscode/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Test
+htmlcov/
+.tox/
+.coverage
+.cache
+.pytest_cache/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints
+
+# Others
+*.bak
+*.swp
+*.swo
+
+# Release
+release/
+simplejsonspider.egg-info/
+
+# Doc
+RELEASERELEASE_NOTES.md
