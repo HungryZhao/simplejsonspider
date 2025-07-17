@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "no-local-version"
+write_to = "simplejsonspider/_version.py"
+
+[project]
+name = "simplejsonspider"
+authors = [
+    {name = "Zeturn", email = "hollowdata@outlook.com"},
+]
+description = "A simple package to crawl JSON APIs and save response to local files."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+license = {text = "MIT"}
+keywords = ["json", "spider", "api", "crawler"]
+dependencies = [
+    "requests",
+    "PyYAML",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/HungryZhao/simplejsonspider"
+Repository = "https://github.com/HungryZhao/simplejsonspider"
+Issues = "https://github.com/HungryZhao/simplejsonspider/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

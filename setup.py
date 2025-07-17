@@ -3,6 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='simplejsonspider',
     use_scm_version=True,
+    setup_requires=['setuptools_scm'],
     description='A simple package to crawl JSON APIs and save response to local files.',
     author='Zeturn',
     author_email='hollowdata@outlook.com',
@@ -12,9 +13,8 @@ setup(
         'PyYAML',
     ],
     python_requires='>=3.6',
-    url='https://github.com/zeturn/simplejsonspider',  # 可选
+    url='https://github.com/HungryZhao/simplejsonspider',
     license='MIT',
-    keywords='json spider api crawler',
     long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
     classifiers=[

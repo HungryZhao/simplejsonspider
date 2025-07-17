@@ -1,4 +1,4 @@
-# **simplejsonspider** 是一个超简单的 Python 工具包，用于请求指定的 API 并将返回内容自动保存为本地文件。支持 JSON、YAML、VTT、XML、CSV 等多种格式的自动识别和保存。你只需要指定接口地址、文件名模板和存储路径，即可"一键抓取、自动存储"。
+# **simplejsonspider** 
 
 ---
 
@@ -12,7 +12,7 @@
 - 🎨 **格式化输出**：自动格式化 JSON、YAML 等结构化内容
 - 🔄 **向后兼容**：完全兼容旧版本的使用方式spider
 
-**simplejsonspider** 是一个超简单的 Python 工具包，用于请求指定的 JSON API 并将返回内容自动保存为本地 JSON 文件。你只需要指定接口地址、文件名模板和存储路径，即可“一键抓取、自动存储”。注意：该工具包仅支持 JSON 格式的 API 响应。用GPT 4.1 只花了15分钟写的。
+**simplejsonspider** 一个超简单的 Python 工具包，用于请求指定的 API 并将返回内容自动保存为本地文件。支持 JSON、YAML、VTT、XML、CSV 等多种格式的自动识别和保存。只需要指定接口地址、文件名模板和存储路径，即可一键抓取、自动存储。用GPT 4.1 只花了15分钟写的，但是人工检查过代码，应该靠谱。
 
 
 ---
@@ -29,6 +29,16 @@
 
 ```bash
 pip install simplejsonspider
+```
+
+### 从 GitHub 安装最新版本
+
+```bash
+# 安装最新 release 版本
+pip install https://github.com/HungryZhao/simplejsonspider/releases/latest/download/simplejsonspider-0.3.0-py3-none-any.whl
+
+# 或者从源码安装
+pip install git+https://github.com/HungryZhao/simplejsonspider.git
 ````
 
 ---
@@ -230,13 +240,16 @@ spider.save_json(json_data)
 
 ## License
 
-MIT License
+Do what you want with it, but please keep the original author information,
+or MIT License.
 
 ---
 
 ## 关于作者
 
 Zeturn：[GitHub 主页](https://github.com/zeturn)
+
+* 这个包发布在了小号上面 [HungryZhao](https://github.com/HungryZhao)
 
 ---
 
