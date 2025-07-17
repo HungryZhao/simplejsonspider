@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='simplejsonspider',
-    version='0.3.0',
+    use_scm_version=True,
     description='A simple package to crawl JSON APIs and save response to local files.',
     author='Zeturn',
     author_email='hollowdata@outlook.com',
