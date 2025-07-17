@@ -3,7 +3,7 @@
 import os
 import requests
 import json
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, Tuple
 from .file_detector import FileTypeDetector
 
 class SimpleJSONSpider:
@@ -35,7 +35,7 @@ class SimpleJSONSpider:
         self.cookies = cookies or {}
         os.makedirs(self.storage_dir, exist_ok=True)
 
-    def fetch_content(self) -> tuple[str, str]:
+    def fetch_content(self) -> Tuple[str, str]:
         """
         获取API响应内容并检测文件类型
         
