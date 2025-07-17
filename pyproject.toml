@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 version_scheme = "post-release"
 local_scheme = "no-local-version"
 write_to = "simplejsonspider/_version.py"
+root = "."
 
 [project]
 name = "simplejsonspider"
@@ -36,6 +37,10 @@ dependencies = [
     "PyYAML",
 ]
 dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["simplejsonspider*"]
 
 [project.urls]
 Homepage = "https://github.com/HungryZhao/simplejsonspider"
