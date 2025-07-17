@@ -35,6 +35,8 @@ jobs:
     - name: Test package build
       run: |
         python -m pip install build
+        # Clean dist directory first to avoid conflicts
+        rm -rf dist/ build/ *.egg-info/
         python -m build
         pip install dist/*.whl
         python -c "import simplejsonspider; print('Package installed successfully')"

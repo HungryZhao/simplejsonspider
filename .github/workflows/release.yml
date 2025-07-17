@@ -52,6 +52,8 @@ jobs:
 
       - name: Build package
         run: |
+          # Clean dist directory first to avoid conflicts
+          rm -rf dist/ build/ *.egg-info/
           python -m build
 
       - name: Create GitHub Release
